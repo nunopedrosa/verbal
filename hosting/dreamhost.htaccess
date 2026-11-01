@@ -1,0 +1,14 @@
+# Optional: copy manually to the webroot as .htaccess. deploy.sh preserves yours.
+Options -Indexes
+DirectoryIndex index.html
+<IfModule mod_mime.c>
+ AddType application/manifest+json .webmanifest
+ AddType image/svg+xml .svg
+</IfModule>
+<IfModule mod_headers.c>
+ <FilesMatch "^(index\.html|sw\.js|release\.json|manifest\.webmanifest|app\.js|core\.js|i18n\.js|words\.js|style\.css)$">
+  Header set Cache-Control "no-cache, must-revalidate"
+ </FilesMatch>
+ Header always set X-Content-Type-Options "nosniff"
+ Header always set Referrer-Policy "same-origin"
+</IfModule>
