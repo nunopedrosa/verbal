@@ -58,7 +58,7 @@ These instructions apply to development in this repository. They are also the re
 
 ## Common interface and Settings
 
-- **Required:** put Settings and Language together in the top-right corner of every main app screen, in that left-to-right order: **Settings gear, then Language flag selector**. Use the shared Settings gear with a localized accessible name. Keep both controls reachable on narrow screens; compact other header content before displacing them. Closing Settings returns to the previous task without resetting it.
+- **Required:** put Settings and Language together in the top-right corner of every main app screen, in that left-to-right order: **Settings gear, then Language pull-down**. Use the shared Settings gear with a localized accessible name. Keep both controls reachable on narrow screens; compact other header content before displacing them. Closing Settings returns to the previous task without resetting it.
 - Settings must make the applicable functions reachable: **Language**, **Data and backups**, **Installation and offline help**, **Check for updates**, **Help and privacy**, and the **installed app version at the bottom**. Labels, visual grouping and internal layout are flexible; the functions are required subject to the explicit scope exceptions below. Group related controls, keep the body scrollable, and keep close/back/actions reachable on short and narrow screens. Frequently used controls may also appear in the header or task view.
 - Explain when each setting takes effect: immediately, on the next document/puzzle, or after an explicit action. Display preferences must not silently change records, restart timers, regenerate puzzles or discard work. Defaults for new items must not reinterpret historical items.
 - Keep destructive actions separate from routine settings, clearly labeled and confirmed with their scope. Reset preferences, clear records and remove offline assets are different operations. Offer export before destructive replacement where data exists.
@@ -68,7 +68,7 @@ These instructions apply to development in this repository. They are also the re
 ## Languages and locale
 
 - **Required:** English and **European Portuguese (`pt-PT`)** must cover the complete interface and work offline. Additional languages use the same extensible translation mechanism.
-- **Required:** provide a compact flag-based language selector immediately after Settings in the top-right header, and keep language selection reachable in Settings. Always show flags in the selector and its language choices: use the UK flag for English and Portugal flag for European Portuguese, with EN/PT or full language names as appropriate. Provide accessible full language names; flags alone must not be the only accessible identification. Use bundled local flag SVGs, available offline, rather than platform-dependent emoji. On narrow screens retain usable Settings, language and primary actions.
+- **Required:** provide a compact **Language pull-down** immediately after Settings in the top-right header, and keep the same control reachable in Settings. This native `<select>` is the default language control for every app. The visible choices are Unicode flags that stand for the interface language: 🇬🇧 for English and 🇵🇹 for European Portuguese. Do not put the language name in the option `label` or option text; that replaces the flag in the native menu. Give the select an accessible name that includes the full current language (English or European Portuguese). The closed control is the same height as neighbouring buttons and shares their top edge when they sit on one line. On narrow screens retain usable Settings, language and primary actions.
 - **Default selection:** use a valid explicit saved preference first, then the first supported language in the browser's ordered language preferences, then English. Portuguese variants select the European Portuguese catalogue unless a separately supported variant is available. Remember only an explicit user choice, in app-scoped on-device storage.
 - Change language immediately without reloading, losing edits, changing identities, progress, timer state, history, filters or selection. Keep user text, names and imported records in their original form. For app-authored puzzles/content, translate the provided content while retaining stable underlying IDs and answers.
 - Keep user-facing strings in local catalogues or an equivalent shared translation layer. Translate dynamic errors, validation, empty states, confirmations, help, accessible names, titles, status messages and generated human-readable output. Set the document language correctly. A missing translation falls back to English; flag missing entries during development.
@@ -109,7 +109,7 @@ These instructions apply to development in this repository. They are also the re
 - **Default:** use a small shared radius scale, starting at **2 CSS pixels for controls** and **4 CSS pixels for panels and dialogs**. Keep these values in reusable CSS tokens or equivalent shared styles. These values are the user-selected shared defaults; the universal requirement is restrained, consistent curves rather than an identical radius on every surface.
 - Preserve square geometry where rounding would misrepresent content, such as joined table cells, document pages, puzzle grids and edge-to-edge regions. This interface rule does not change physical fabrication contours, print dimensions or domain geometry.
 - **Required:** keep layouts tight using a shared spacing scale starting at **2 CSS pixels**. **Default tokens:** 2, 4, 6, 8, 12, 16 and 24 px; use 2–4 px for closely related elements and 6–8 px for ordinary gaps and compact panel padding. Larger gaps require a clear grouping or readability purpose; avoid oversized card padding and decorative empty space. Tight visual spacing must not shrink touch targets, overlap hit areas or impair readability.
-- **Required:** use consistent button padding, borders, heights, action states and primary/secondary/destructive hierarchy across apps. **Default ordinary button padding:** 4 px vertically and 8 px horizontally, with a **minimum 44 × 44 CSS-pixel touch area**; the minimum target takes precedence over compact padding. Keep icon controls visually compact within that target. Provide recognizable hover where supported, focus, pressed, disabled and busy states without shifting the layout. General typography, app-specific colors and artwork may vary; helper messages follow the shared narrow-font rule below. Preserve accessible contrast and readable controls.
+- **Required:** use consistent button padding, borders, heights, action states and primary/secondary/destructive hierarchy across apps. **Default ordinary button padding:** 4 px vertically and 8 px horizontally, with a **minimum 44 × 44 CSS-pixel touch area**; the minimum target takes precedence over compact padding. Buttons that share a line use that same height and align by their top edges; do not vertically center a shorter button against a taller one in the same row. Keep icon controls visually compact within that target and on the same top edge. Provide recognizable hover where supported, focus, pressed, disabled and busy states without shifting the layout. General typography, app-specific colors and artwork may vary; helper messages follow the shared narrow-font rule below. Preserve accessible contrast and readable controls.
 - Settings uses the same recognizable gear/wheel design across apps. Check for updates and Update app use shared, consistent icon designs and distinct labels/states. Use **one bundled local SVG family** for Settings, update, import, export, close, Back and card expand/collapse. Common actions reuse the same icon shapes, stroke conventions, sizing and alignment; avoid mixing emoji, unrelated icon families or platform-dependent glyphs as substitutes for standardized action icons. Flags are the prescribed language indicators and retain their own colors. Preserve localized accessible names and text alternatives.
 - Implement the shared visual rules with local CSS tokens/styles and local SVGs or equivalent compatible assets. Share the specification without requiring a framework, build step, runtime CDN or live dependency on the toolbox site. A common control style must not erase a game's artwork or impose a shared body font or theme; helper-message typography is explicitly shared.
 
@@ -233,12 +233,12 @@ Record the adopted baseline revision in the app's instructions. Verify the path 
 | Audit group | Minimum evidence |
 | --- | --- |
 | Local operation and privacy | Core workflow runs offline; requests/storage match the documented boundary. |
-| Settings and help | Top-right Settings gear then flag-based Language selector retained on narrow screens; Settings reachable from main screens; required sections and version reachable on narrow/short screens. |
+| Settings and help | Top-right Settings gear then Language pull-down (Unicode flag choices, full language name on the control’s accessible name) retained on narrow screens; Settings reachable from main screens; required sections and version reachable on narrow/short screens. |
 | Languages | EN/pt-PT switch immediately without state loss; preference/failure behavior and translated dynamic text/output checked offline. |
 | Backup and restore | Actual exported file includes language, theme when present and other supported device preferences, and restores covered data and metadata; Restore preferences starts checked, unchecked preserves device preferences, and old backups do not reset them; scope/exclusions clear; legacy formats, duplicates, cancellation and failed writes checked. |
 | Installation | Browser use works; install prompt/manual guidance appropriate; manifest/icons scoped and available. |
 | Updates | Distinct release verified before prompt; explicit safe activation; incomplete release leaves a complete offline shell usable. |
-| Visual style | Controls default to 2 px curves and panels to 4 px; spacing, buttons, common action icons, flat surfaces, meaningful cards, alignment, text hierarchy and selected states follow the shared conventions; meaningful circles and precise content geometry remain correct. |
+| Visual style | Controls default to 2 px curves and panels to 4 px; spacing, buttons of equal height top-aligned on a shared line, common action icons, flat surfaces, meaningful cards, alignment, text hierarchy and selected states follow the shared conventions; meaningful circles and precise content geometry remain correct. |
 | Interaction and cards | Consistent feedback, destructive confirmation and Back/Close with task/focus preservation; top-right card toggles reopen without data loss and retain 44 px touch areas. |
 | Resilient workflows | Save states and failed-save recovery are truthful; applicable Undo, form errors, interruption recovery, stale-window conflicts, backup freshness, busy/empty states, private diagnostics, list-state preservation and permission refusal paths are exercised. |
 | Helper typography | Short and long helper messages use the same shared narrow face/style; EN/PT, offline font fallback, single-line fit and readable wrapping at narrow widths/enlarged text are checked. |
@@ -264,7 +264,7 @@ Reviewed on 2026-10-27 against local repository documents and selected implement
 | `../doctools/AGENTS.md`, `../doctools/SUMMARY.md`, `../doctools/web/index.html` | In-memory original/result workflow, no saved file history, bounded processing and safe updates across windows. Its previous desktop browser floor now needs an iPhone 6 fallback/feature-availability audit; English-only interface/common Settings need adoption work. |
 | `../agenda/AGENTS.md`, `../agenda/README.md` | Approved account/server/sync exception, authorization and unsynced-device data boundaries. Operator SQL backup and ICS do not satisfy missing device backup/import UI. Preserve its specific PHP and Safari 12 requirements. |
 
-The universal Settings entry, minimum EN/pt-PT coverage and consistent discoverability are formalized for all PWAs by this consolidation. Settings internal grouping/layout, English fallback and default JSON for new structured apps are shared design defaults, not retrospective claims of unanimous prior approval. The subsequent user decisions require top-right Settings followed by flag-based Language controls. Theme options, automatic synchronization, storage engine, import sizes, progress persistence and printing remain app-specific. The subsequent user decisions below establish a universal iPhone 6 target and shared control styling.
+The universal Settings entry, minimum EN/pt-PT coverage and consistent discoverability are formalized for all PWAs by this consolidation. Settings internal grouping/layout, English fallback and default JSON for new structured apps are shared design defaults, not retrospective claims of unanimous prior approval. The subsequent user decisions require top-right Settings followed by a native Language `<select>` pull-down (Unicode flag for each interface language; full language name on the control’s accessible name). Theme options, automatic synchronization, storage engine, import sizes, progress persistence and printing remain app-specific. The subsequent user decisions below establish a universal iPhone 6 target and shared control styling.
 
 ### User decisions on 2026 10 27
 
@@ -277,10 +277,10 @@ The universal Settings entry, minimum EN/pt-PT coverage and consistent discovera
 ### Interaction decisions on 2026 10 27
 
 - Tight spacing starts at 2 px. The 2/4/6/8/12/16/24 px scale, ordinary 6–8 px gaps/panel padding and 4/8 px button padding above are implementation defaults for this direction, not separately user-selected measurements.
-- Button padding, states and action hierarchy are consistent, with minimum 44 px touch areas. Common actions use one local SVG family.
+- Button padding, states and action hierarchy are consistent, with a shared height of at least 44 px. Buttons on the same line align by their top edges. Common actions use one local SVG family.
 - Import offers Restore preferences, checked by default. Feedback uses brief nonblocking successes, persistent actionable errors and destructive confirmations. Back/Close preserves the task and returns focus.
 - Cards have a small control in the top-right corner to collapse/open their body while retaining a visible header and reopen control.
-- Top-right controls are ordered Settings then Language. Language selection always uses flags, with accessible language names.
+- Top-right controls are ordered Settings then Language. The default language control is a native `<select>` pull-down whose visible choices are only Unicode flags (🇬🇧 / 🇵🇹). The full language name belongs on the select’s accessible name, not in the option text or option `label`. The control matches neighbouring button height and top edge.
 
 The exact SVG drawings are still to be selected or authored as reusable assets; this specification defines their shared family and use without claiming that an asset kit or conforming app implementations already exist.
 
@@ -295,3 +295,20 @@ Horizontal page scrolling is prohibited. Deliberate, bounded component scrolling
 ### Visual detail decisions on 2026 10 27
 
 The user approved thin borders/flat surfaces, restrained shadows for floating surfaces, meaningful card grouping, consistent alignment and text hierarchy, readable text overflow, compact responsive dialogs, unobstructive sticky controls, consistent selected states, purposeful motion and useful desktop columns. Helper messages always use the same shared narrow font and styling, even when short, aiming for a single line while retaining readable wrapping when necessary. The exact narrow font asset remains to be selected.
+
+## Shared controls and deployment implementation (2026-11-01)
+
+The user approved a common local control kit and deployment engine. Canonical
+sources are `shared/controls/` and `shared/deploy/`; each app vendors its own
+copy and owns its adapter/profile. `scripts/sync-controls.py --check` and
+`scripts/sync-deploy.py --check` detect drift. Use the flat SVG Settings gear;
+never substitute Unicode/emoji gear glyphs. Shared controls are screen-only.
+
+For this toolbox, `scripts/deploy.sh` now delegates to the local common core
+and its exact four-file profile. Read `docs/SHARED_DEPLOYMENT.md` and the shared
+engine before changing publication. The public allowlist remains unchanged.
+A dry run never fetches/writes. Normal runs require a clean tracked branch,
+fast-forward-only pull, staging and per-file atomic publication. No broad
+pruning. App-specific private/release contracts remain explicit; Agenda is
+not a static-copy deployment and Doctools retains verified immutable releases.
+These additions do not authorize any actual production deployment.

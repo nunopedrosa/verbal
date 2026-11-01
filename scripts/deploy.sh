@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/sh
+[ -n "${BASH_VERSION:-}" ] || exec bash "$0" "$@"
+# Run on the host. Local shared engine; this wrapper never deploys another app.
 set -euo pipefail
-# Host-side deployment. Keep this checkout outside the public web directory.
-VERBAL_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
-exec python3 "$VERBAL_ROOT/scripts/deploy.py" "$@"
+DEPLOY_CHECKOUT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)
+source "$DEPLOY_CHECKOUT/scripts/deploy-profile.sh"
+source "$DEPLOY_CHECKOUT/scripts/deploy-core.sh"
+deploy_main "$@"
