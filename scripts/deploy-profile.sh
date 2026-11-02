@@ -12,6 +12,10 @@ paper.js
 words.js
 guesses.js
 dictionary-license.txt
+english.js
+english-license.txt
+vocabulary.js
+paper-en-data.js
 core.js
 challenges.js
 variants.js
