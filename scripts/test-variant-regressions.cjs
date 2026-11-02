@@ -1,0 +1,8 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),C=require('../public/core.js'),V=require('../public/variants.js'),D=require('../public/challenges.js');
+const c={};vm.createContext(c);vm.runInContext(fs.readFileSync('public/words.js','utf8')+';this.banks=BANKS',c);vm.runInContext(fs.readFileSync('public/guesses.js','utf8')+';this.words=GUESSES',c);let failed=0;
+function test(name,fn){try{fn();console.log('PASS '+name);}catch(e){failed++;console.error('FAIL '+name+': '+e.message);}}
+function collection(){return {format:'verbal',schema:1,prefs:{language:'en',length:4,mode:'daily'},games:{},nextFree:1,variants:{}};}
+const validate=d=>C.validate(d,c.banks,(data,banks)=>V.validateCollection(data,banks,c.words));
+test('ladder rejects revisiting start and imported loops',()=>{const g=V.create('ladder',4,'daily:2026-11-02',c.banks),route=D.ladders[4].find(p=>p[0]===g.start&&p[p.length-1]===g.answers[0]);assert.equal(V.submit(g,route[1],c.words[4]),null);const before=JSON.stringify(g);assert.equal(V.submit(g,g.start,c.words[4]),'duplicate');assert.equal(JSON.stringify(g),before);g.guesses.push(g.start);const data=collection();data.variants[V.key(g)]=g;assert.throws(()=>validate(data));});
+test('friend preferences reject non-dictionary payload even without records',()=>{for(const variants of [undefined,{}]){const data=collection();data.variants=variants;data.prefs.variant='friend';data.prefs.challenge=V.encode('ZZZZ');assert.throws(()=>validate(data));}const data=collection();data.prefs.variant='friend';data.prefs.challenge=V.encode('CASA');assert.equal(validate(data),data);});
+process.exitCode=failed?1:0;

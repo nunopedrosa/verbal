@@ -72,3 +72,17 @@ footer span+span{margin-left:8px}
 #save-warning{border:1px solid #ad553a;padding:12px;color:#8c402b;line-height:1.5;font-size:13px}
 @media(max-height:640px){footer{display:none}.legend{margin-top:4px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Mode controls retain the same compact play frame. */
+.boards{display:flex;align-items:flex-start;justify-content:center}
+.boards>div:not([hidden]){display:grid;gap:2px;flex:none;margin:0 auto}
+#board-two{width:100%}
+#games{font-size:13px;background:transparent;border-color:var(--line)}
+#fixed-mode{flex:1;min-width:0;min-height:44px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.meta{align-items:center}.meta span{min-width:0;flex:1;overflow-wrap:break-word}
+#board-switch{font-size:12px;max-width:110px;margin:0 4px}
+.tile.revealed{box-shadow:inset 0 0 0 1px var(--ink)}
+.tile.path-step{background:#e9eae1}
+#modal .challenge-label{display:block}
+#challenge-word{display:block;width:100%;min-width:0;min-height:44px;margin-top:6px;border:1px solid var(--line);border-radius:2px;background:var(--paper);color:var(--ink);font-size:20px;padding:4px 8px}
+#modal-body button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+@media(min-width:700px){.boards>div+div:not([hidden]){margin-left:12px}}

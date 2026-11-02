@@ -10,6 +10,8 @@ words.js
 guesses.js
 dictionary-license.txt
 core.js
+challenges.js
+variants.js
 i18n.js
 app.js
 manifest.webmanifest

@@ -1,4 +1,4 @@
-# Verification — Verbal 1.0.1
+# Verification — Verbal 1.1.0
 
 Prepared 2026-11-01. Target deployment: verbal.basecentral.link; **not published there by this delivery**. Package intended for the existing local Git checkout on the user's Mac.
 
@@ -52,3 +52,25 @@ Local-first/privacy, bilingual UI, Settings/language order, state preservation, 
 - Physical iPhone 6/iOS 12.5.x, installed Home Screen, enlarged text, landscape and screen-reader checks remain manual. Modern Chromium tests and CSS fallbacks do not establish physical-device compatibility.
 
 Final 1.0.2 evidence: Chromium 156.0.8078.4 on macOS passed the EN/PT viewport matrix (320×480, 320×568, 375×559, 390×664, 768×900) at all lengths, verifying every keyboard row and board/keyboard visibility without horizontal overflow. The browser submitted MAES, CASAS, PAPEIS, ANIMAIS and CORACOES while offline. Native language/restore-preferences tests and explicit 1.0.0 → 1.0.2 upgrade preserved the full saved collection and old cache. Rebuilding vocabulary from the pinned sources reproduced identical bytes. Core, vocabulary, SW integrity and disposable deployment tests passed; an independent read-only review found no actionable issues, while explicitly leaving physical Safari/landscape verification open. Plural acceptance is stated beside the puzzle as well as in Help.
+
+## 1.1.0 seven approved variations — 2026-11-02
+
+Implemented Classic-preserving Strict, Two words, Themes, Progressive, Word ladder, Friend challenge and One clue. Added a pure rules/validation module and bounded curated challenge data. Existing answer banks and the 89,901 accepted-guess entries are byte-identical. The classic daily algorithm is unchanged; the only core change is an explicit optional validator for additive schema 1 fields. No storage-key change, destructive migration or production publication.
+
+### Passed
+
+- `node scripts/test-variants.cjs`: all seven rule sets, deterministic seeds, theme coverage, every curated ladder route (valid words/single-letter steps), strict repeated-letter constraints, dual terminal state, all five progression steps, four-guess clue insertion, friend-token round trip/malformed rejection, mode limits/losses, old backups, all-mode backup round trip, canonical answer/key/clue validation and invalid/skipped-stage rejection.
+- `node scripts/test-variant-regressions.cjs`: ladder cannot revisit its start, including imported histories; friend preference tokens must also contain accepted vocabulary even when variants are absent. Both reproduced as failures before corrections.
+- `scripts/test-variations-browser.cjs`, Chromium 156.0.8078.4/macOS: new picker and drafts, dual solve and board switch, one-clue solve, all five progressive stages, a complete ladder, themed solve while genuinely offline, explicit friend-link creation/preview/resume, invalid-link storage preservation, Classic draft preservation, 8-letter variants at widths 320/375 and heights 568/667 in EN/PT, checked/unchecked backup preferences, complete variant restoration, invalid-backup refusal, true offline reload, simulated quota failure preserving the session draft, and a second-window write blocking stale unsaved changes.
+- A checked restore from Double board two to a completed Classic game initially reproduced missing keyboard colours. The fix retains single-board keyboard scoring independent of the dual-board view; the full browser regression passed after correction.
+- Existing `scripts/test-browser.cjs`: Classic portrait viewport matrix and QWERTY/touch rules, offline expanded plural guesses, legacy-CSS overlay/square fallback, native language controls and restore preferences, and real explicit 1.0.0 → 1.1.0 upgrade preserving all classic games and old caches. Optional new defaults are added to old preferences without dropping their values.
+- Core, vocabulary, SW install integrity, actual temporary-Git deployment tests and central actual-profile publication tests passed. The worker verifies 19 assets plus the navigation alias; deploy publishes exactly 21 reviewed files, including the new challenges.js/variants.js, with refreshed private hashes. No host credentials or live deployment were used in these tests.
+- Visual inspection of two-word and clue screenshots confirmed readable eight-letter cells, compact controls and three QWERTY rows. Large-screen boards are side by side; compact phones switch full boards with labelled keyboard context.
+
+### Independent review
+
+A fresh reviewer read the spec and full diff and identified three P2 edge cases: start-word ladder loops, invalid vocabulary in a preference-only friend token, and restored single-board keyboard colours after viewing board two. All three were reproduced with failing regressions, fixed, and confirmed addressed in a scoped re-review. No new breakage was identified in the corrections.
+
+### Remaining limits
+
+Physical iPhone 6/iOS 12.5.x/Safari 12, installed Home Screen, screen readers and real platform share/download dialogs remain manual. Very short landscape/enlarged-text views may scroll to retain readable cells and accessible controls. Friend links encode their answer and deliberately offer no anti-cheat security. Old version caches are retained for existing clients. Released challenge tables must remain immutable or receive versioned definitions/migration before expansion.
