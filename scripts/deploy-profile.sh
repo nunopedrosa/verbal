@@ -6,6 +6,9 @@ DEPLOY_URL=https://verbal.basecentral.link
 PUBLIC_FILES=$(cat <<'PUBLIC_FILES'
 index.html
 style.css
+paper.css
+paper-data.js
+paper.js
 words.js
 guesses.js
 dictionary-license.txt

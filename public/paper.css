@@ -1,0 +1,31 @@
+/* Deduction play controls and isolated, monochrome A4 print sheets. */
+#deduction-panel{margin-top:6px;text-align:left}
+#deduction-panel p{font-family:'Arial Narrow',Arial,sans-serif;font-size:13px;line-height:1.4;margin:6px 0}
+#deduction-legend{font-weight:600}
+#deduction-clues{margin:8px 0}
+.paper-clue{display:flex;justify-content:center;margin:3px 0}
+.paper-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--ink);width:30px;height:36px;margin-right:2px;line-height:1}
+.paper-cell:last-child{margin-right:0}.paper-cell b{font-size:20px}.paper-cell small{font-size:11px;margin-top:2px}
+#deduction-bank{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:8px 0}
+#deduction-bank .paper-word{min-width:44px;padding:4px 2px;font-size:12px;font-weight:600;border-color:var(--line);background:var(--paper);color:var(--ink)}
+#deduction-bank .paper-word[aria-pressed=true]{text-decoration:line-through;opacity:.55}
+#deduction-form{display:flex;align-items:flex-start;margin:8px 0}
+#deduction-form select{height:44px;white-space:nowrap;font-size:14px;flex:1;min-width:0;border:1px solid var(--line);background-color:var(--paper);color:var(--ink)}
+#deduction-check{margin-left:4px;border-color:var(--line);background:var(--ink);color:var(--paper)}
+#deduction-print{border-color:var(--line);background:transparent}
+#modal .paper-field{display:flex;justify-content:space-between;flex-wrap:wrap;margin:6px 0}
+#modal .paper-field select{width:auto;min-width:100px;font-size:14px}
+#paper-download{border-color:var(--line);color:var(--ink);background:var(--paper);text-decoration:none;margin:4px 4px 4px 0}
+#paper-print{display:none}
+@media print{
+ @page{size:A4;margin:0}
+ body.paper-ready{padding:0!important;margin:0!important;background:white!important}
+ body.paper-ready>*:not(#paper-print){display:none!important}
+ body.paper-ready>#paper-print{display:block!important;margin:0;padding:0}
+ .paper-page{width:210mm;height:296.5mm;margin:0;padding:0;page-break-after:always;break-after:page;overflow:hidden;color:black;background:white}
+ .paper-page:last-child{page-break-after:auto;break-after:auto}
+ .paper-page svg{display:block;width:100%;height:100%}
+}
+#paper-history-search{width:100%;min-width:0;min-height:44px;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:2px;background:var(--paper);color:var(--ink)}
+.paper-history-row{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.4}
+.paper-history-row strong,.paper-history-row span{display:block}

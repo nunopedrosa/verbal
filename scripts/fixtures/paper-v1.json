@@ -1,0 +1,1982 @@
+[
+  {
+    "length": 4,
+    "answer": "CASA",
+    "bank": [
+      "AGUA",
+      "CAFE",
+      "CASA",
+      "COTA",
+      "CUJO",
+      "DANO",
+      "SAIA",
+      "USAR"
+    ],
+    "clues": [
+      {
+        "word": "AMOR",
+        "score": "~xxx"
+      },
+      {
+        "word": "ITEM",
+        "score": "xxxx"
+      }
+    ],
+    "id": "paper-v1-4-1"
+  },
+  {
+    "length": 4,
+    "answer": "GATO",
+    "bank": [
+      "AMOR",
+      "ANOS",
+      "CASO",
+      "GATO",
+      "NOTA",
+      "PAGO",
+      "ROTA",
+      "TOCA"
+    ],
+    "clues": [
+      {
+        "word": "ANEL",
+        "score": "~xxx"
+      },
+      {
+        "word": "ARTE",
+        "score": "~x=x"
+      }
+    ],
+    "id": "paper-v1-4-2"
+  },
+  {
+    "length": 4,
+    "answer": "MESA",
+    "bank": [
+      "ASAS",
+      "CASO",
+      "ESTE",
+      "FAMA",
+      "MESA",
+      "MOTA",
+      "SEIS",
+      "SUMO"
+    ],
+    "clues": [
+      {
+        "word": "BODE",
+        "score": "xxx~"
+      },
+      {
+        "word": "FIGO",
+        "score": "xxxx"
+      }
+    ],
+    "id": "paper-v1-4-3"
+  },
+  {
+    "length": 4,
+    "answer": "LAGO",
+    "bank": [
+      "ATOR",
+      "AULA",
+      "BOLO",
+      "CASO",
+      "GEMA",
+      "LAGO",
+      "MOLA",
+      "SOLA"
+    ],
+    "clues": [
+      {
+        "word": "CUJO",
+        "score": "xxx="
+      },
+      {
+        "word": "ANEL",
+        "score": "~xx~"
+      }
+    ],
+    "id": "paper-v1-4-4"
+  },
+  {
+    "length": 4,
+    "answer": "AGUA",
+    "bank": [
+      "AGUA",
+      "ATOR",
+      "DATA",
+      "DEUS",
+      "ESSA",
+      "LIGA",
+      "MEIA",
+      "RUGA"
+    ],
+    "clues": [
+      {
+        "word": "FIEL",
+        "score": "xxxx"
+      },
+      {
+        "word": "RAMO",
+        "score": "x~xx"
+      }
+    ],
+    "id": "paper-v1-4-5"
+  },
+  {
+    "length": 4,
+    "answer": "ALTO",
+    "bank": [
+      "ALTO",
+      "LIXO",
+      "LOBO",
+      "ROLO",
+      "TELA",
+      "TINO",
+      "TODO",
+      "TUDO"
+    ],
+    "clues": [
+      {
+        "word": "BODE",
+        "score": "x~xx"
+      },
+      {
+        "word": "BRIO",
+        "score": "xxx="
+      }
+    ],
+    "id": "paper-v1-4-6"
+  },
+  {
+    "length": 4,
+    "answer": "AMOR",
+    "bank": [
+      "AMOR",
+      "ANOS",
+      "ERVA",
+      "FOME",
+      "FURO",
+      "GAMA",
+      "REMO",
+      "RODA"
+    ],
+    "clues": [
+      {
+        "word": "DOSE",
+        "score": "x~xx"
+      },
+      {
+        "word": "DEUS",
+        "score": "xxxx"
+      }
+    ],
+    "id": "paper-v1-4-7"
+  },
+  {
+    "length": 4,
+    "answer": "ANEL",
+    "bank": [
+      "AMOR",
+      "ANEL",
+      "ARTE",
+      "BALA",
+      "PALA",
+      "SALA",
+      "TEMA",
+      "VILA"
+    ],
+    "clues": [
+      {
+        "word": "DATA",
+        "score": "x~xx"
+      },
+      {
+        "word": "BASE",
+        "score": "x~x~"
+      }
+    ],
+    "id": "paper-v1-4-8"
+  },
+  {
+    "length": 4,
+    "answer": "ANJO",
+    "bank": [
+      "ANJO",
+      "ASAS",
+      "COXA",
+      "NORA",
+      "ONZE",
+      "PANO",
+      "ROSA",
+      "UNHA"
+    ],
+    "clues": [
+      {
+        "word": "NAVE",
+        "score": "~~xx"
+      },
+      {
+        "word": "GRAU",
+        "score": "xx~x"
+      }
+    ],
+    "id": "paper-v1-4-9"
+  },
+  {
+    "length": 4,
+    "answer": "ANOS",
+    "bank": [
+      "ANOS",
+      "FORA",
+      "ISSO",
+      "MESA",
+      "NOVO",
+      "ORAL",
+      "OSSO",
+      "SOFA"
+    ],
+    "clues": [
+      {
+        "word": "BICO",
+        "score": "xxx~"
+      },
+      {
+        "word": "LOTE",
+        "score": "x~xx"
+      }
+    ],
+    "id": "paper-v1-4-10"
+  },
+  {
+    "length": 4,
+    "answer": "ARCO",
+    "bank": [
+      "ARCO",
+      "CIMA",
+      "COLO",
+      "DICA",
+      "FACA",
+      "ORAL",
+      "RUMO",
+      "ZERO"
+    ],
+    "clues": [
+      {
+        "word": "BOTA",
+        "score": "x~x~"
+      },
+      {
+        "word": "PELE",
+        "score": "xxxx"
+      }
+    ],
+    "id": "paper-v1-4-11"
+  },
+  {
+    "length": 4,
+    "answer": "ARTE",
+    "bank": [
+      "ARCO",
+      "ARTE",
+      "COTA",
+      "FITA",
+      "HORA",
+      "LUTA",
+      "PENA",
+      "RUAS"
+    ],
+    "clues": [
+      {
+        "word": "RUAS",
+        "score": "~x~x"
+      },
+      {
+        "word": "LIXO",
+        "score": "xxxx"
+      }
+    ],
+    "id": "paper-v1-4-12"
+  },
+  {
+    "length": 5,
+    "answer": "LIVRO",
+    "bank": [
+      "CLARO",
+      "FAROL",
+      "LIVRE",
+      "LIVRO",
+      "PIANO",
+      "POLVO",
+      "RIGOR",
+      "RISCO",
+      "SOGRO",
+      "TIGRE",
+      "VELHO",
+      "VIOLA"
+    ],
+    "clues": [
+      {
+        "word": "ALUNO",
+        "score": "x~xx="
+      },
+      {
+        "word": "PLACA",
+        "score": "x~xxx"
+      },
+      {
+        "word": "CUNHA",
+        "score": "xxxxx"
+      }
+    ],
+    "id": "paper-v1-5-1"
+  },
+  {
+    "length": 5,
+    "answer": "PRAIA",
+    "bank": [
+      "BRACO",
+      "CAIXA",
+      "GEADA",
+      "MAGIA",
+      "NARIZ",
+      "PARAR",
+      "PERNA",
+      "PISTA",
+      "POEMA",
+      "PRAIA",
+      "SAFRA",
+      "TROCA"
+    ],
+    "clues": [
+      {
+        "word": "IGUAL",
+        "score": "~xx~x"
+      },
+      {
+        "word": "GESTO",
+        "score": "xxxxx"
+      },
+      {
+        "word": "POLVO",
+        "score": "=xxxx"
+      }
+    ],
+    "id": "paper-v1-5-2"
+  },
+  {
+    "length": 5,
+    "answer": "ABRIL",
+    "bank": [
+      "ABRIL",
+      "ARROZ",
+      "CARNE",
+      "CASAL",
+      "DOBRA",
+      "FEIRA",
+      "FLORA",
+      "ILHAS",
+      "MACIO",
+      "RIVAL",
+      "SOBRA",
+      "VERBA"
+    ],
+    "clues": [
+      {
+        "word": "CAMPO",
+        "score": "x~xxx"
+      },
+      {
+        "word": "JOVEM",
+        "score": "xxxxx"
+      },
+      {
+        "word": "JUNHO",
+        "score": "xxxxx"
+      }
+    ],
+    "id": "paper-v1-5-3"
+  },
+  {
+    "length": 5,
+    "answer": "ADEGA",
+    "bank": [
+      "ADEGA",
+      "AGORA",
+      "AJUDA",
+      "AVIAO",
+      "CARTA",
+      "DUZIA",
+      "NADAR",
+      "PRAIA",
+      "PRATA",
+      "PREGO",
+      "TERRA",
+      "ZEBRA"
+    ],
+    "clues": [
+      {
+        "word": "ELITE",
+        "score": "~xxxx"
+      },
+      {
+        "word": "FINAL",
+        "score": "xxx~x"
+      },
+      {
+        "word": "LUZES",
+        "score": "xxx~x"
+      }
+    ],
+    "id": "paper-v1-5-4"
+  },
+  {
+    "length": 5,
+    "answer": "AGORA",
+    "bank": [
+      "AGORA",
+      "AREIA",
+      "ARROZ",
+      "ASTRO",
+      "GALHO",
+      "GRUTA",
+      "HARPA",
+      "JOGAR",
+      "LARGO",
+      "RAIVA",
+      "RAPAZ",
+      "RODAS"
+    ],
+    "clues": [
+      {
+        "word": "ELITE",
+        "score": "xxxxx"
+      },
+      {
+        "word": "GRAVE",
+        "score": "~~~xx"
+      },
+      {
+        "word": "ERVAS",
+        "score": "x~x~x"
+      }
+    ],
+    "id": "paper-v1-5-5"
+  },
+  {
+    "length": 5,
+    "answer": "AJUDA",
+    "bank": [
+      "AJUDA",
+      "CARTA",
+      "CASAL",
+      "JULHO",
+      "MANTA",
+      "MUDAR",
+      "PALMA",
+      "PANDA",
+      "PRADO",
+      "PULGA",
+      "RUIDO",
+      "SAUDE"
+    ],
+    "clues": [
+      {
+        "word": "CORPO",
+        "score": "xxxxx"
+      },
+      {
+        "word": "FELIZ",
+        "score": "xxxxx"
+      },
+      {
+        "word": "PONTO",
+        "score": "xxxxx"
+      }
+    ],
+    "id": "paper-v1-5-6"
+  },
+  {
+    "length": 5,
+    "answer": "ALUNO",
+    "bank": [
+      "ALUNO",
+      "ARROZ",
+      "BALAO",
+      "CALOR",
+      "CANOA",
+      "CUNHA",
+      "FORNO",
+      "IGUAL",
+      "JULHO",
+      "RURAL",
+      "SOLAR",
+      "TALAO"
+    ],
+    "clues": [
+      {
+        "word": "TECER",
+        "score": "xxxxx"
+      },
+      {
+        "word": "VIOLA",
+        "score": "xx~~~"
+      },
+      {
+        "word": "FEBRE",
+        "score": "xxxxx"
+      }
+    ],
+    "id": "paper-v1-5-7"
+  },
+  {
+    "length": 5,
+    "answer": "AMIGO",
+    "bank": [
+      "AMIGO",
+      "APITO",
+      "BRISA",
+      "CRIAR",
+      "FEIRA",
+      "FILHO",
+      "FORMA",
+      "GOMAS",
+      "MAGIA",
+      "MOSCA",
+      "PIANO",
+      "POMBA"
+    ],
+    "clues": [
+      {
+        "word": "VELAS",
+        "score": "xxx~x"
+      },
+      {
+        "word": "BAILE",
+        "score": "x~=xx"
+      },
+      {
+        "word": "HASTE",
+        "score": "x~xxx"
+      }
+    ],
+    "id": "paper-v1-5-8"
+  },
+  {
+    "length": 5,
+    "answer": "AMORA",
+    "bank": [
+      "AMORA",
+      "AVIAO",
+      "BARCO",
+      "CANOA",
+      "COMER",
+      "DRAMA",
+      "IRMAO",
+      "PALMA",
+      "POMBA",
+      "PRATA",
+      "RADIO",
+      "TURMA"
+    ],
+    "clues": [
+      {
+        "word": "CISNE",
+        "score": "xxxxx"
+      },
+      {
+        "word": "SINOS",
+        "score": "xxx~x"
+      },
+      {
+        "word": "LEVAR",
+        "score": "xxx~~"
+      }
+    ],
+    "id": "paper-v1-5-9"
+  },
+  {
+    "length": 5,
+    "answer": "ANDAR",
+    "bank": [
+      "AGORA",
+      "AJUDA",
+      "ANDAR",
+      "BRASA",
+      "CARTA",
+      "ENTRE",
+      "ERVAS",
+      "LUNAR",
+      "OBRAS",
+      "PANDA",
+      "SOLAR",
+      "ZELAR"
+    ],
+    "clues": [
+      {
+        "word": "POLVO",
+        "score": "xxxxx"
+      },
+      {
+        "word": "CESTO",
+        "score": "xxxxx"
+      },
+      {
+        "word": "CORPO",
+        "score": "xx~xx"
+      }
+    ],
+    "id": "paper-v1-5-10"
+  },
+  {
+    "length": 5,
+    "answer": "ANTES",
+    "bank": [
+      "ANDAR",
+      "ANTES",
+      "CANTO",
+      "LAPIS",
+      "LETRA",
+      "METRO",
+      "PAPEL",
+      "PARTE",
+      "PESCA",
+      "RENDA",
+      "SINAL",
+      "TECLA"
+    ],
+    "clues": [
+      {
+        "word": "MACIO",
+        "score": "x~xxx"
+      },
+      {
+        "word": "EXAME",
+        "score": "~x~xx"
+      },
+      {
+        "word": "VIGIA",
+        "score": "xxxx~"
+      }
+    ],
+    "id": "paper-v1-5-11"
+  },
+  {
+    "length": 5,
+    "answer": "APITO",
+    "bank": [
+      "APITO",
+      "FATIA",
+      "GOSTO",
+      "NOITE",
+      "POETA",
+      "POMBA",
+      "RESTO",
+      "ROSTO",
+      "TORTA",
+      "VAPOR",
+      "VAZIO",
+      "VITAL"
+    ],
+    "clues": [
+      {
+        "word": "CREME",
+        "score": "xxxxx"
+      },
+      {
+        "word": "UNHAS",
+        "score": "xxx~x"
+      },
+      {
+        "word": "DENTE",
+        "score": "xxx=x"
+      }
+    ],
+    "id": "paper-v1-5-12"
+  },
+  {
+    "length": 6,
+    "answer": "CAVALO",
+    "bank": [
+      "AMAVEL",
+      "BRANCO",
+      "CAMISA",
+      "CASULO",
+      "CAVALO",
+      "COMIDA",
+      "ESCOLA",
+      "ESTALO",
+      "JOGADA",
+      "PATRAO",
+      "SALADA",
+      "VALIDO"
+    ],
+    "clues": [
+      {
+        "word": "PARQUE",
+        "score": "x=xxxx"
+      },
+      {
+        "word": "BOSQUE",
+        "score": "x~xxxx"
+      },
+      {
+        "word": "IMAGEM",
+        "score": "xx~xxx"
+      }
+    ],
+    "id": "paper-v1-6-1"
+  },
+  {
+    "length": 6,
+    "answer": "JANELA",
+    "bank": [
+      "ALFACE",
+      "BALIZA",
+      "BONECA",
+      "CALCAR",
+      "DECADA",
+      "GENIAL",
+      "JANELA",
+      "MANDAR",
+      "MANEJO",
+      "PANELA",
+      "SILABA",
+      "ZANGAO"
+    ],
+    "clues": [
+      {
+        "word": "AUTORA",
+        "score": "~xxxx="
+      },
+      {
+        "word": "APERTO",
+        "score": "~x~xxx"
+      },
+      {
+        "word": "ESTUDO",
+        "score": "~xxxxx"
+      }
+    ],
+    "id": "paper-v1-6-2"
+  },
+  {
+    "length": 6,
+    "answer": "ABERTO",
+    "bank": [
+      "ABERTO",
+      "ADULTO",
+      "ATENTO",
+      "BRILHO",
+      "COMETA",
+      "CONTAR",
+      "CORTAR",
+      "DITADO",
+      "ENSAIO",
+      "ESTOJO",
+      "EVITAR",
+      "PATRAO"
+    ],
+    "clues": [
+      {
+        "word": "IRONIA",
+        "score": "x~~xx~"
+      },
+      {
+        "word": "SALADA",
+        "score": "x~xxxx"
+      },
+      {
+        "word": "COSMOS",
+        "score": "x~xxxx"
+      }
+    ],
+    "id": "paper-v1-6-3"
+  },
+  {
+    "length": 6,
+    "answer": "ABRACO",
+    "bank": [
+      "ABRACO",
+      "BONECO",
+      "CABELO",
+      "CORRER",
+      "DOBRAR",
+      "ESPACO",
+      "PADRAO",
+      "PATRAO",
+      "PORCAO",
+      "QUADRO",
+      "ROBALO",
+      "ROUBAR"
+    ],
+    "clues": [
+      {
+        "word": "PRIMOS",
+        "score": "x~xx~x"
+      },
+      {
+        "word": "FIGURA",
+        "score": "xxxx~~"
+      },
+      {
+        "word": "TALHER",
+        "score": "x~xxx~"
+      }
+    ],
+    "id": "paper-v1-6-4"
+  },
+  {
+    "length": 6,
+    "answer": "ACERTO",
+    "bank": [
+      "ACERTO",
+      "BRANCO",
+      "CEBOLA",
+      "COELHO",
+      "COLHER",
+      "ENTRAR",
+      "ESTADO",
+      "MOSTRA",
+      "PALITO",
+      "POENTE",
+      "RECEIO",
+      "SENTAR"
+    ],
+    "clues": [
+      {
+        "word": "VOLUME",
+        "score": "x~xxx~"
+      },
+      {
+        "word": "COSMOS",
+        "score": "~~xxxx"
+      },
+      {
+        "word": "GAIOLA",
+        "score": "x~x~xx"
+      }
+    ],
+    "id": "paper-v1-6-5"
+  },
+  {
+    "length": 6,
+    "answer": "ACUCAR",
+    "bank": [
+      "ACUCAR",
+      "APRECO",
+      "AQUELE",
+      "BROTAR",
+      "CARVAO",
+      "CEREAL",
+      "FRASCO",
+      "JUNTAR",
+      "PLANAR",
+      "PUDERA",
+      "QUADRO",
+      "VACINA"
+    ],
+    "clues": [
+      {
+        "word": "ESTADO",
+        "score": "xxx~xx"
+      },
+      {
+        "word": "MESTRE",
+        "score": "xxxx~x"
+      },
+      {
+        "word": "EMPATE",
+        "score": "xxx~xx"
+      }
+    ],
+    "id": "paper-v1-6-6"
+  },
+  {
+    "length": 6,
+    "answer": "ADORAR",
+    "bank": [
+      "ABRACO",
+      "ADORAR",
+      "BAIXAR",
+      "BALADA",
+      "BRANCO",
+      "CALCAR",
+      "CARVAO",
+      "CORTAR",
+      "IDIOMA",
+      "MORADA",
+      "NORMAL",
+      "PADRAO"
+    ],
+    "clues": [
+      {
+        "word": "CABELO",
+        "score": "x~xxx~"
+      },
+      {
+        "word": "COLETE",
+        "score": "x~xxxx"
+      },
+      {
+        "word": "DESLIZ",
+        "score": "~xxxxx"
+      }
+    ],
+    "id": "paper-v1-6-7"
+  },
+  {
+    "length": 6,
+    "answer": "ADULTO",
+    "bank": [
+      "ACERTO",
+      "ADULTO",
+      "ATENTO",
+      "CANUDO",
+      "DOURAR",
+      "ESTILO",
+      "HUMANO",
+      "METODO",
+      "PLANTA",
+      "QUARTA",
+      "TALHAO",
+      "ULTIMO"
+    ],
+    "clues": [
+      {
+        "word": "ESFERA",
+        "score": "xxxxx~"
+      },
+      {
+        "word": "BONECO",
+        "score": "xxxxx="
+      },
+      {
+        "word": "BOSQUE",
+        "score": "x~xx~x"
+      }
+    ],
+    "id": "paper-v1-6-8"
+  },
+  {
+    "length": 6,
+    "answer": "ALEGRE",
+    "bank": [
+      "ALEGRE",
+      "ALGUMA",
+      "ATLETA",
+      "FILMAR",
+      "FLECHA",
+      "FLORES",
+      "GALERA",
+      "GRAVAR",
+      "GUERRA",
+      "LOUVAR",
+      "PLANAR",
+      "PRENDA"
+    ],
+    "clues": [
+      {
+        "word": "BAIXAR",
+        "score": "x~xxx~"
+      },
+      {
+        "word": "PATINS",
+        "score": "x~xxxx"
+      },
+      {
+        "word": "MUSEUS",
+        "score": "xxx~xx"
+      }
+    ],
+    "id": "paper-v1-6-9"
+  },
+  {
+    "length": 6,
+    "answer": "ALFACE",
+    "bank": [
+      "ALFACE",
+      "AMAVEL",
+      "CABACA",
+      "CAMADA",
+      "CEBOLA",
+      "CULPAR",
+      "ESPADA",
+      "ESTALO",
+      "GALERA",
+      "LAVRAR",
+      "MARCAR",
+      "MENTAL"
+    ],
+    "clues": [
+      {
+        "word": "INUTIL",
+        "score": "xxxxx~"
+      },
+      {
+        "word": "TINTAS",
+        "score": "xxxx~x"
+      },
+      {
+        "word": "SUBIDA",
+        "score": "xxxxx~"
+      }
+    ],
+    "id": "paper-v1-6-10"
+  },
+  {
+    "length": 6,
+    "answer": "ALGUMA",
+    "bank": [
+      "ALEGRE",
+      "ALGUMA",
+      "AMAVEL",
+      "AQUELE",
+      "ATLETA",
+      "BALADA",
+      "CALADO",
+      "CALCAR",
+      "GENIAL",
+      "LARGAR",
+      "RESUMO",
+      "SALADA"
+    ],
+    "clues": [
+      {
+        "word": "BARRIL",
+        "score": "x~xxx~"
+      },
+      {
+        "word": "PORTAL",
+        "score": "xxxx~~"
+      },
+      {
+        "word": "CONCHA",
+        "score": "xxxxx="
+      }
+    ],
+    "id": "paper-v1-6-11"
+  },
+  {
+    "length": 6,
+    "answer": "ALTURA",
+    "bank": [
+      "ABRACO",
+      "ALTURA",
+      "ATRITO",
+      "BALIZA",
+      "BARATO",
+      "BARRIL",
+      "CAMARA",
+      "ENTRAR",
+      "GALERA",
+      "PLANAR",
+      "RAINHA",
+      "RITUAL"
+    ],
+    "clues": [
+      {
+        "word": "CONCHA",
+        "score": "xxxxx="
+      },
+      {
+        "word": "COELHO",
+        "score": "xxx~xx"
+      },
+      {
+        "word": "BRILHO",
+        "score": "x~x~xx"
+      }
+    ],
+    "id": "paper-v1-6-12"
+  },
+  {
+    "length": 7,
+    "answer": "FORMIGA",
+    "bank": [
+      "CAMPINA",
+      "CARACOL",
+      "CARINHO",
+      "COMECAR",
+      "DESAFIO",
+      "ESCRITA",
+      "FABRICA",
+      "FORMIGA",
+      "FRAGATA",
+      "IMAGENS",
+      "JARDINS",
+      "MOCHILA",
+      "MORCEGO",
+      "OFICINA",
+      "QUIMICA",
+      "RIBEIRA"
+    ],
+    "clues": [
+      {
+        "word": "ATITUDE",
+        "score": "~x~xxxx"
+      },
+      {
+        "word": "DESLIZE",
+        "score": "xxxx=xx"
+      },
+      {
+        "word": "PASSADO",
+        "score": "x~xxxx~"
+      }
+    ],
+    "id": "paper-v1-7-1"
+  },
+  {
+    "length": 7,
+    "answer": "LARANJA",
+    "bank": [
+      "ADAPTAR",
+      "ALEGRIA",
+      "BANDEJA",
+      "CAMPINA",
+      "CAVALOS",
+      "CERVEJA",
+      "CORACAO",
+      "DEVAGAR",
+      "FABRICA",
+      "GALINHA",
+      "LARANJA",
+      "MURALHA",
+      "NATURAL",
+      "NAVALHA",
+      "PALACIO",
+      "VACINAS"
+    ],
+    "clues": [
+      {
+        "word": "PESSOAS",
+        "score": "xxxxx~x"
+      },
+      {
+        "word": "PROVADO",
+        "score": "x~xx~xx"
+      },
+      {
+        "word": "AMIZADE",
+        "score": "~xxx~xx"
+      }
+    ],
+    "id": "paper-v1-7-2"
+  },
+  {
+    "length": 7,
+    "answer": "ABACATE",
+    "bank": [
+      "ABACATE",
+      "AMIZADE",
+      "BOLACHA",
+      "CANTIGA",
+      "CASTELO",
+      "CAVALOS",
+      "DEITADO",
+      "ESCADAS",
+      "ESTANTE",
+      "FABRICA",
+      "FRAGATA",
+      "LATERAL",
+      "MASCARA",
+      "PALHETA",
+      "VAIDADE",
+      "VONTADE"
+    ],
+    "clues": [
+      {
+        "word": "FORMIGA",
+        "score": "xxxxxx~"
+      },
+      {
+        "word": "NINGUEM",
+        "score": "xxxxx~x"
+      },
+      {
+        "word": "DIREITO",
+        "score": "xxx~x=x"
+      }
+    ],
+    "id": "paper-v1-7-3"
+  },
+  {
+    "length": 7,
+    "answer": "ABELHAS",
+    "bank": [
+      "ABELHAS",
+      "ABRIGAR",
+      "ALEGRIA",
+      "BAGAGEM",
+      "BALEIAS",
+      "BILHETE",
+      "CEREJAS",
+      "CRISTAL",
+      "ESTUDAR",
+      "LATERAL",
+      "MENINAS",
+      "OBJETOS",
+      "PALHACO",
+      "PALHETA",
+      "PESSOAL",
+      "VACINAS"
+    ],
+    "clues": [
+      {
+        "word": "CORAGEM",
+        "score": "xxx~x~x"
+      },
+      {
+        "word": "NINGUEM",
+        "score": "xxxxx~x"
+      },
+      {
+        "word": "DURANTE",
+        "score": "xxx~xx~"
+      }
+    ],
+    "id": "paper-v1-7-4"
+  },
+  {
+    "length": 7,
+    "answer": "ABRACAR",
+    "bank": [
+      "ABACATE",
+      "ABRACAR",
+      "ABRIGAR",
+      "AMARELO",
+      "BATALHA",
+      "BOLACHA",
+      "BONECAS",
+      "BRANCOS",
+      "CAVALOS",
+      "CEBOLAS",
+      "CORAGEM",
+      "ESPERAR",
+      "ESTACAO",
+      "LAVANDA",
+      "MUDANCA",
+      "NATURAL"
+    ],
+    "clues": [
+      {
+        "word": "PESSOAS",
+        "score": "xxxxx=x"
+      },
+      {
+        "word": "SOSSEGO",
+        "score": "xxxxxxx"
+      },
+      {
+        "word": "ESPELHO",
+        "score": "xxxxxxx"
+      }
+    ],
+    "id": "paper-v1-7-5"
+  },
+  {
+    "length": 7,
+    "answer": "ABRIGAR",
+    "bank": [
+      "ABRIGAR",
+      "ADAPTAR",
+      "AMIZADE",
+      "ARQUIVO",
+      "ARRANJO",
+      "CANTIGA",
+      "CEREAIS",
+      "DEVAGAR",
+      "GRAMADO",
+      "GRAVATA",
+      "HERANCA",
+      "MADEIRA",
+      "MILAGRE",
+      "PADARIA",
+      "PARAISO",
+      "TUBARAO"
+    ],
+    "clues": [
+      {
+        "word": "LOUCURA",
+        "score": "xxxxx~~"
+      },
+      {
+        "word": "CULTURA",
+        "score": "xxxxx~~"
+      },
+      {
+        "word": "ESQUEMA",
+        "score": "xxxxxx~"
+      }
+    ],
+    "id": "paper-v1-7-6"
+  },
+  {
+    "length": 7,
+    "answer": "ACERTAR",
+    "bank": [
+      "ABACATE",
+      "ABRIGAR",
+      "ACERTAR",
+      "CADEADO",
+      "CADEIRA",
+      "COLETAR",
+      "CORAGEM",
+      "CORRIDA",
+      "ESCADAS",
+      "ESTRELA",
+      "MADEIRA",
+      "MASCARA",
+      "PLANETA",
+      "RAPAZES",
+      "RENOVAR",
+      "RETRATO"
+    ],
+    "clues": [
+      {
+        "word": "SOSSEGO",
+        "score": "xxxx~xx"
+      },
+      {
+        "word": "QUIMICA",
+        "score": "xxxxx~~"
+      },
+      {
+        "word": "FRANCES",
+        "score": "x~~x~~x"
+      }
+    ],
+    "id": "paper-v1-7-7"
+  },
+  {
+    "length": 7,
+    "answer": "ACORDAR",
+    "bank": [
+      "ACERTAR",
+      "ACORDAR",
+      "ADULTOS",
+      "ALEGRIA",
+      "BARALHO",
+      "BRANCOS",
+      "CALCADO",
+      "CIGARRA",
+      "COMECAR",
+      "ESCADAS",
+      "ESCOVAR",
+      "ESTACAO",
+      "ESTUDAR",
+      "PALACIO",
+      "PATINAR",
+      "REPARAR"
+    ],
+    "clues": [
+      {
+        "word": "QUINTAL",
+        "score": "xxxxx=x"
+      },
+      {
+        "word": "FIGURAS",
+        "score": "xxxx~=x"
+      },
+      {
+        "word": "CAMPINA",
+        "score": "~~xxxx~"
+      }
+    ],
+    "id": "paper-v1-7-8"
+  },
+  {
+    "length": 7,
+    "answer": "ACUSADO",
+    "bank": [
+      "ABACATE",
+      "ACUSADO",
+      "ANIMAIS",
+      "BRANCOS",
+      "CADEADO",
+      "CALCADO",
+      "CAVALOS",
+      "CONSOLA",
+      "CORACAO",
+      "DOURADO",
+      "ESCADAS",
+      "LOUCURA",
+      "MAGICAS",
+      "PASSARO",
+      "PASTORA",
+      "POSICAO"
+    ],
+    "clues": [
+      {
+        "word": "OFICINA",
+        "score": "~xx~xx~"
+      },
+      {
+        "word": "FILHOTE",
+        "score": "xxxx~xx"
+      },
+      {
+        "word": "MOCHILA",
+        "score": "x~~xxx~"
+      }
+    ],
+    "id": "paper-v1-7-9"
+  },
+  {
+    "length": 7,
+    "answer": "ADAPTAR",
+    "bank": [
+      "ABACATE",
+      "ABRIGAR",
+      "ACORDAR",
+      "ADAPTAR",
+      "CIGARRA",
+      "JOGADOR",
+      "MASCARA",
+      "MOSTRAR",
+      "NATACAO",
+      "PALHETA",
+      "PARECER",
+      "PAREDES",
+      "PASTORA",
+      "RAPAZES",
+      "RAPIDOS",
+      "REPARAR"
+    ],
+    "clues": [
+      {
+        "word": "CERVEJA",
+        "score": "xx~xxx~"
+      },
+      {
+        "word": "VELHICE",
+        "score": "xxxxxxx"
+      },
+      {
+        "word": "VERDURA",
+        "score": "xx~~xx~"
+      }
+    ],
+    "id": "paper-v1-7-10"
+  },
+  {
+    "length": 7,
+    "answer": "ADULTOS",
+    "bank": [
+      "ABELHAS",
+      "ACUSADO",
+      "ADULTOS",
+      "ARTISTA",
+      "BRANCOS",
+      "COELHOS",
+      "CRISTAL",
+      "DETALHE",
+      "ESTACAO",
+      "FOLHADO",
+      "LUGARES",
+      "METADES",
+      "QUINTAL",
+      "SEGUNDA",
+      "TIJOLOS",
+      "VONTADE"
+    ],
+    "clues": [
+      {
+        "word": "FABRICA",
+        "score": "x~xxxxx"
+      },
+      {
+        "word": "PISCINA",
+        "score": "xx~xxx~"
+      },
+      {
+        "word": "CAMPINA",
+        "score": "x~xxxxx"
+      }
+    ],
+    "id": "paper-v1-7-11"
+  },
+  {
+    "length": 7,
+    "answer": "ALEGRIA",
+    "bank": [
+      "ABELHAS",
+      "ALEGRIA",
+      "AMIZADE",
+      "COLETAR",
+      "CRIANCA",
+      "DIRECAO",
+      "ERVILHA",
+      "GALINHA",
+      "LARANJA",
+      "LATERAL",
+      "ORELHAS",
+      "PLANTAR",
+      "POEIRAS",
+      "RECEITA",
+      "RELOGIO",
+      "VIOLETA"
+    ],
+    "clues": [
+      {
+        "word": "CALCADO",
+        "score": "x~~x~xx"
+      },
+      {
+        "word": "DOURADO",
+        "score": "xxx~~xx"
+      },
+      {
+        "word": "PEQUENO",
+        "score": "x~xxxxx"
+      }
+    ],
+    "id": "paper-v1-7-12"
+  },
+  {
+    "length": 8,
+    "answer": "CASTANHA",
+    "bank": [
+      "ABACAXIS",
+      "ADIVINHA",
+      "CANTIGAS",
+      "CARINHOS",
+      "CARTEIRA",
+      "CASTANHA",
+      "CONVERSA",
+      "GELATINA",
+      "HABITUAL",
+      "HISTORIA",
+      "INSTALAR",
+      "MELANCIA",
+      "NATUREZA",
+      "PISCINAS",
+      "TRABALHO",
+      "VANTAGEM"
+    ],
+    "clues": [
+      {
+        "word": "FERRUGEM",
+        "score": "xxxxxxxx"
+      },
+      {
+        "word": "DEZEMBRO",
+        "score": "xxxxxxxx"
+      },
+      {
+        "word": "ESPERADO",
+        "score": "x~xxx~xx"
+      }
+    ],
+    "id": "paper-v1-8-1"
+  },
+  {
+    "length": 8,
+    "answer": "MONTANHA",
+    "bank": [
+      "ACONTECE",
+      "ANIMACAO",
+      "BORRACHA",
+      "COMENTAR",
+      "GATINHOS",
+      "HABITUAL",
+      "HISTORIA",
+      "HONESTOS",
+      "INFINITO",
+      "MARATONA",
+      "MELHORAR",
+      "MONTANHA",
+      "MUDANCAS",
+      "REBANHOS",
+      "TAMANHOS",
+      "ZANGADOS"
+    ],
+    "clues": [
+      {
+        "word": "APARECER",
+        "score": "~x~xxxxx"
+      },
+      {
+        "word": "ESCREVER",
+        "score": "xxxxxxxx"
+      },
+      {
+        "word": "PERCEBER",
+        "score": "xxxxxxxx"
+      }
+    ],
+    "id": "paper-v1-8-2"
+  },
+  {
+    "length": 8,
+    "answer": "ABACAXIS",
+    "bank": [
+      "ABACAXIS",
+      "AMIGAVEL",
+      "ANIMACAO",
+      "BASTANTE",
+      "BATUCADA",
+      "CORRIDAS",
+      "CRIATURA",
+      "FRAGATAS",
+      "GALINHAS",
+      "INFANCIA",
+      "LARANJAS",
+      "MUDANCAS",
+      "NOTICIAS",
+      "PASTILHA",
+      "PLASTICO",
+      "VACINADO"
+    ],
+    "clues": [
+      {
+        "word": "ESCREVER",
+        "score": "x~~xxxxx"
+      },
+      {
+        "word": "REGRESSO",
+        "score": "xxxxx~xx"
+      },
+      {
+        "word": "FERRUGEM",
+        "score": "xxxxxxxx"
+      }
+    ],
+    "id": "paper-v1-8-3"
+  },
+  {
+    "length": 8,
+    "answer": "ABERTURA",
+    "bank": [
+      "ABERTURA",
+      "ACERTADO",
+      "ACUCARAR",
+      "AMARELOS",
+      "BASTANTE",
+      "BATUCADA",
+      "CADEIRAO",
+      "CIRCULAR",
+      "CORRENTE",
+      "CRIATURA",
+      "GELATINA",
+      "GRITARIA",
+      "INTERIOR",
+      "QUANTIAS",
+      "SERENATA",
+      "VALENTIA"
+    ],
+    "clues": [
+      {
+        "word": "GOSTOSOS",
+        "score": "xxx~xxxx"
+      },
+      {
+        "word": "NAMORADO",
+        "score": "x~xx~~xx"
+      },
+      {
+        "word": "GOLFINHO",
+        "score": "xxxxxxxx"
+      }
+    ],
+    "id": "paper-v1-8-4"
+  },
+  {
+    "length": 8,
+    "answer": "ACADEMIA",
+    "bank": [
+      "ACADEMIA",
+      "ADIVINHA",
+      "ALIMENTO",
+      "ARRUMADO",
+      "ATLETICO",
+      "CAMISOLA",
+      "CARACOIS",
+      "CASTANHA",
+      "COLMEIAS",
+      "COMERCIO",
+      "CUIDADOS",
+      "DECIDIDO",
+      "LAMPADAS",
+      "MELANCIA",
+      "MUDANCAS",
+      "SARDINHA"
+    ],
+    "clues": [
+      {
+        "word": "RESPIRAR",
+        "score": "x~xx~x~x"
+      },
+      {
+        "word": "PRECISAR",
+        "score": "xx~~~x~x"
+      },
+      {
+        "word": "RIBEIRAS",
+        "score": "x~x~xx~x"
+      }
+    ],
+    "id": "paper-v1-8-5"
+  },
+  {
+    "length": 8,
+    "answer": "ACERTADO",
+    "bank": [
+      "ACERTADO",
+      "ADIANTAR",
+      "ADORAVEL",
+      "ATRASADO",
+      "AZEITONA",
+      "CADEIRAO",
+      "CAPACETE",
+      "CARAMELO",
+      "COMBATER",
+      "COMPRADO",
+      "CONVERSA",
+      "ESCRITOR",
+      "ESTUDADO",
+      "LAGARTOS",
+      "MARATONA",
+      "PRENDADO"
+    ],
+    "clues": [
+      {
+        "word": "PASSEIOS",
+        "score": "x~xx~x~x"
+      },
+      {
+        "word": "VIZINHOS",
+        "score": "xxxxxx~x"
+      },
+      {
+        "word": "RESPIRAR",
+        "score": "~~xxxx~x"
+      }
+    ],
+    "id": "paper-v1-8-6"
+  },
+  {
+    "length": 8,
+    "answer": "ACIDENTE",
+    "bank": [
+      "ACIDENTE",
+      "ADIANTAR",
+      "ALIMENTO",
+      "AZEITONA",
+      "DENTISTA",
+      "DESENHAR",
+      "DETALHES",
+      "ELEFANTE",
+      "ENERGICO",
+      "ENFEITAR",
+      "ENTREGAR",
+      "ESTANTES",
+      "ESTENDAL",
+      "ESTENDER",
+      "MANTEIGA",
+      "UNIDADES"
+    ],
+    "clues": [
+      {
+        "word": "JOGADORA",
+        "score": "xxx~~xxx"
+      },
+      {
+        "word": "FAMILIAR",
+        "score": "x~x~xxxx"
+      },
+      {
+        "word": "PRENDADO",
+        "score": "xx~~~~xx"
+      }
+    ],
+    "id": "paper-v1-8-7"
+  },
+  {
+    "length": 8,
+    "answer": "ACONTECE",
+    "bank": [
+      "ACONTECE",
+      "AMBIENTE",
+      "CANIVETE",
+      "CASTANHA",
+      "CASTANHO",
+      "CENOURAS",
+      "CEREBELO",
+      "COMECADO",
+      "COMPLETO",
+      "CONFIADO",
+      "CONTRATO",
+      "CORACOES",
+      "DESCANSO",
+      "ENERGICO",
+      "OCUPACAO",
+      "PROTEGER"
+    ],
+    "clues": [
+      {
+        "word": "LAVANDAS",
+        "score": "x~xx~xxx"
+      },
+      {
+        "word": "QUALQUER",
+        "score": "xx~xxx~x"
+      },
+      {
+        "word": "PALHACOS",
+        "score": "x~xxx~~x"
+      }
+    ],
+    "id": "paper-v1-8-8"
+  },
+  {
+    "length": 8,
+    "answer": "ACORDADO",
+    "bank": [
+      "ACADEMIA",
+      "ACORDADO",
+      "ACUCARAR",
+      "BORRACHA",
+      "CABECUDO",
+      "CARINHOS",
+      "CHOCALHO",
+      "COLORIDO",
+      "CRIATURA",
+      "DECIDIDO",
+      "DECORADO",
+      "ESTUDADO",
+      "FAVORITO",
+      "GALOCHAS",
+      "NAMORADO",
+      "PRENDADO"
+    ],
+    "clues": [
+      {
+        "word": "SUSPIROS",
+        "score": "xxxxx~~x"
+      },
+      {
+        "word": "TRAVESSA",
+        "score": "x~~xxxx~"
+      },
+      {
+        "word": "ESTANTES",
+        "score": "xxx~xxxx"
+      }
+    ],
+    "id": "paper-v1-8-9"
+  },
+  {
+    "length": 8,
+    "answer": "ACUCARAR",
+    "bank": [
+      "ACONTECE",
+      "ACORDADO",
+      "ACUCARAR",
+      "ADIANTAR",
+      "ARRANJAR",
+      "AVENTURA",
+      "CAMINHAR",
+      "CIRCULAR",
+      "CRIANCAS",
+      "CULTIVAR",
+      "DOURADOS",
+      "ILUMINAR",
+      "INSTALAR",
+      "LEITURAS",
+      "RECURSOS",
+      "VERDURAS"
+    ],
+    "clues": [
+      {
+        "word": "PRESENCA",
+        "score": "x~xxxx~~"
+      },
+      {
+        "word": "ESPERADO",
+        "score": "xxxx~~xx"
+      },
+      {
+        "word": "TRAVESSA",
+        "score": "x~~xxxx~"
+      }
+    ],
+    "id": "paper-v1-8-10"
+  },
+  {
+    "length": 8,
+    "answer": "ADIANTAR",
+    "bank": [
+      "ACADEMIA",
+      "ADIANTAR",
+      "ADORAVEL",
+      "ALEGRIAS",
+      "CADEIRAO",
+      "CARNAVAL",
+      "COMANDAR",
+      "ENFEITAR",
+      "ENTREGAR",
+      "ESTENDAL",
+      "FANTASIA",
+      "LAVANDAS",
+      "MADEIRAS",
+      "ORGANICO",
+      "PINTURAS",
+      "TAMANHOS"
+    ],
+    "clues": [
+      {
+        "word": "BORRACHA",
+        "score": "xx~x~xx~"
+      },
+      {
+        "word": "CACHORRO",
+        "score": "x~xxx~xx"
+      },
+      {
+        "word": "CHOCALHO",
+        "score": "xxxx~xxx"
+      }
+    ],
+    "id": "paper-v1-8-11"
+  },
+  {
+    "length": 8,
+    "answer": "ADIVINHA",
+    "bank": [
+      "ADIVINHA",
+      "AMENDOAS",
+      "AZEITONA",
+      "CARNAVAL",
+      "CONVERSA",
+      "DENTISTA",
+      "DESENHAR",
+      "GATINHOS",
+      "GOLFINHO",
+      "GRITARIA",
+      "INSTALAR",
+      "LAVANDAS",
+      "MANTEIGA",
+      "MONTANHA",
+      "ORIGINAL",
+      "PISCINAS"
+    ],
+    "clues": [
+      {
+        "word": "PERCEBER",
+        "score": "xxxxxxxx"
+      },
+      {
+        "word": "QUALQUER",
+        "score": "xx~xxxxx"
+      },
+      {
+        "word": "FERRUGEM",
+        "score": "xxxxxxxx"
+      }
+    ],
+    "id": "paper-v1-8-12"
+  }
+]
