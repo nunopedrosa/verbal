@@ -1,5 +1,5 @@
 'use strict';
-var VERSION='1.4.3',STORE='verbal:data:v1',C=VerbalCore,V=VerbalVariants,P=VerbalPaper,$=function(id){return document.getElementById(id);};
+var VERSION='1.4.4',STORE='verbal:data:v1',C=VerbalCore,V=VerbalVariants,P=VerbalPaper,$=function(id){return document.getElementById(id);};
 function defaults(){return {format:'verbal',schema:1,prefs:{language:null,length:5,mode:'daily',variant:'classic',theme:'nature'},games:{},variants:{},nextFree:1};}
 var db=defaults(),raw=null,blocked=false,dirty=false,storageOK=true;
 try{raw=localStorage.getItem(STORE);if(raw)db=validateData(JSON.parse(raw));}catch(e){storageOK=false;blocked=!!raw;}
@@ -61,7 +61,7 @@ function render(){
  $('edition').textContent=ladder?game.start+' → '+answers[0]:variant==='progressive'?t('stageCount',{n:game.stage+1}):variant==='classic'?(mode==='daily'?t('edition')+' '+new Intl.DateTimeFormat(lang==='pt'?'pt-PT':'en-GB',{day:'numeric',month:'short'}).format(new Date(date+'T12:00:00Z')):t('unlimited')):t('mode_'+variant)+(variant==='theme'?' / '+t('topic_'+game.theme):'');
  $('actions').hidden=state==='playing';$('share').hidden=state==='stage';$('again').hidden=state!=='stage'&&(mode!=='free'||variant==='friend');$('again').textContent=t(state==='stage'?'nextLength':variant==='progressive'?'newSeries':'again');
  var message=state==='win'?t('win',{n:round.guesses.length,limit:varied()?V.limit(game):6}):state==='loss'?t('loss',{word:answers.join(' / ')}):state==='stage'?t('stageWin'):ladder?t('ladderHint',{n:12-round.guesses.length}):t('hint',{n:length});
- if(variant==='deduction')message=t(state==='win'?'deductionSolved':'deductionPrompt');$('deduction-panel').hidden=variant!=='deduction';$('keyboard').hidden=variant==='deduction';document.querySelector('.legend').hidden=variant==='deduction';if(variant==='deduction')renderDeduction();notice(message);fitBoard();
+ if(variant==='deduction')message=t(state==='win'?'deductionSolved':'deductionPrompt');if(state==='win'&&mode==='daily'&&variant!=='friend'){var minutes=C.minutesToNextDay(),hours=Math.floor(minutes/60),rest=minutes%60,time=hours?hours+' h'+(rest?' '+rest+' min':''):minutes+' min';message+=' '+t('nextChallenge',{time:time});}$('deduction-panel').hidden=variant!=='deduction';$('keyboard').hidden=variant==='deduction';document.querySelector('.legend').hidden=variant==='deduction';if(variant==='deduction')renderDeduction();notice(message);fitBoard();
 }
 function input(k){
  if(!$('overlay').hidden||blocked)return;if(mode==='daily'&&variant!=='friend'&&date!==C.day()){selectGame();notice(t('newDay'));return;}if(gameStatus()!=='playing')return;
@@ -160,4 +160,5 @@ function showPaperHistory(){
  search.oninput=function(){page=0;draw();};draw();
 }
 
+setInterval(function(){if(document.hidden||!game||mode!=='daily'||variant==='friend')return;if(date!==C.day()){selectGame();return;}if(gameStatus()==='win')render();},30000);
 selectGame();localize();previewChallenge();

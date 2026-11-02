@@ -33,3 +33,6 @@ Object.assign(TEXT.pt,{paperRestoreCount:'Histórico de pedidos em papel: {n} pu
 
 Object.assign(TEXT.en,{wordLanguage:'Words',wordsPortuguese:'Portuguese',wordsEnglish:'English',wordLanguageHelp:'Changing word language resumes its separate game. Menu language does not change the puzzle. English answers use British spelling; accepted guesses also include common American variants.'});
 Object.assign(TEXT.pt,{wordLanguage:'Palavras',wordsPortuguese:'Português',wordsEnglish:'Inglês',wordLanguageHelp:'Mudar o idioma das palavras retoma o respetivo jogo separado. O idioma dos menus não altera o desafio. As respostas inglesas usam a grafia britânica; as tentativas também incluem variantes americanas comuns.'});
+
+Object.assign(TEXT.en,{nextChallenge:'Next challenge in {time}.'});
+Object.assign(TEXT.pt,{nextChallenge:'Próximo desafio daqui a {time}.'});

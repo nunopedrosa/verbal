@@ -156,3 +156,7 @@ Removed the six-guess claim from shared EN/pt-PT rules; each game's existing spe
 ## 1.4.3 word-language flags — 2026-11-02
 
 Game word selector and its Settings copy now show Portugal/UK flags, matching the interface selector's native flag format. Accessible name and tooltip identify Words plus the full current vocabulary language, preserving the distinction from Interface language. Controls remain74px wide with44px minimum height. Core, worker integrity, deployment and app syntax checks passed; English gameplay/backup/offline and Classic phone-layout/upgrade browser suites passed. Release metadata refreshed; old caches retained. No publication; physical iPhone/Safari remains manual.
+
+## 1.4.4 daily countdown — 2026-11-02
+
+Solved daily games display localized time remaining until Lisbon midnight (hours/minutes, rounded up to the minute). Friend and Free games excluded; progressive intermediate stages do not claim the whole series is solved. Refreshes every30 seconds while visible, with existing day rollover preserved. Core countdown tests cover winter, summer, minute rounding and23/25-hour DST days. English browser suite verifies solved daily messages in EN/PT across all ordinary modes including Deduction. Core, worker integrity, deployment checks passed; release hashes refreshed and old caches retained. No publication.
