@@ -1,0 +1,2 @@
+const assert=require('node:assert/strict'),C=require('../public/core.js');
+const bank=['CASA','GATO','LAGO'];assert.equal(C.unusedAnswer(bank,{a:{answer:'CASA'},b:{answer:'GATO'}},{},()=>0),'LAGO');assert.equal(C.unusedAnswer(bank,{a:{answer:'CASA'}},{b:{answers:['GATO','LAGO']}},()=>0),null);assert.equal(C.unusedAnswer(bank,{}, {},()=>.99),'LAGO');console.log('PASS random unused words, saved history and explicit exhaustion');

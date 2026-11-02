@@ -57,3 +57,7 @@ English data in english.js is generated reproducibly from pinned sources and edi
 ## English print expansion — 2026-11-02
 
 English print pool1671, unique answers, preserves original200 via scripts/fixtures/paper-en-200.json. New print-only paper-en-print-v2 records use F codes; original E codes retain identity. English gameplay choose must filter paper-en-v1 only; pack selects all English print records. Preserve all1671 records on future expansion, with stable canonical history/backup validation. Uneven per-length distribution is intentional.
+
+## Classic random/no-repeat decision — 2026-11-02
+
+User requested random words marked used and explicitly requested another Daily word after each finished game. Classic now randomly selects unused answers in both Daily and Free, tracked by existing saved Classic records per vocabulary. Preserve unfinished games. Daily Classic Another word archives the finished record under an unused free identity before creating another current daily record; never overwrite an existing record. No repeat on exhaustion; show localized message to change length/language. Classic no longer promises a next-midnight countdown. Other daily variants retain their existing identities/schedule.

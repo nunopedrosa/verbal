@@ -160,3 +160,15 @@ Game word selector and its Settings copy now show Portugal/UK flags, matching th
 ## 1.4.4 daily countdown — 2026-11-02
 
 Solved daily games display localized time remaining until Lisbon midnight (hours/minutes, rounded up to the minute). Friend and Free games excluded; progressive intermediate stages do not claim the whole series is solved. Refreshes every30 seconds while visible, with existing day rollover preserved. Core countdown tests cover winter, summer, minute rounding and23/25-hour DST days. English browser suite verifies solved daily messages in EN/PT across all ordinary modes including Deduction. Core, worker integrity, deployment checks passed; release hashes refreshed and old caches retained. No publication.
+
+## 1.5.0 attempt editing — 2026-11-02
+
+Physical Enter submits from ordinary play controls, including a focused length/vocabulary selector; modal input behavior and deduction native form handling stay intact. Current editable cells can be selected for replacement using physical/virtual letters; cursor advances, fixed clue cells and frozen solved double boards remain protected. Sparse drafts use internal spaces, accepted by Classic/variant backup validators but rejected as incomplete on submission. Selected cell is outlined. Unused keyboard background is lighter; absent score grey is also lighter with dark text for contrast.
+
+Passed new browser check: out-of-order letters, sparse draft persistence across reload, replacing positions with virtual letters, Enter submission while selector focused and immutable clue cell. Existing English all-mode/offline/backup browser suite passed. Core, variants, English storage, variant regressions, SW integrity, deployment and syntax passed. Release hashes regenerated for1.5.0; caches retained. No publication. Physical iPhone/Safari remains manual.
+
+## 1.5.1 Classic random unused words — 2026-11-02
+
+Confirmed FELIZ was the deterministic PT five-letter daily answer for2026-11-02. User explicitly requested random new daily games after completion. Classic Daily and Free now choose uniformly from remaining unused editorial answers, with saved Classic game records providing persistent per-vocabulary usage history. Existing unfinished games resume. Another word appears after Daily Classic wins/losses; its finished game is archived without overwriting occupied free keys, then a new daily record is created. Classic midnight countdown removed; other daily variants unchanged. Pool exhaustion refuses repeats with EN/PT guidance. Backup schema and word banks unchanged.
+
+Passed unused-selection unit test (random choice, prior history exclusion, exhaustion), PT/EN browser sequence of eight daily completions with no repeats, reload and backup validation. Existing English all-mode/offline/backup browser suite passed. Core, SW, variants, English-storage, deployment and syntax passed. Release1.5.1 hashes regenerated; caches retained; no publication. Physical iPhone/Safari remains manual.

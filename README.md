@@ -1,4 +1,4 @@
-# Verbal — v1.4.4
+# Verbal — v1.5.1
 
 Jogo de palavras instalável, local e offline. Palavras portuguesas ou inglesas de 4, 5, 6, 7 ou 8 letras, seis tentativas, desafio diário por tamanho, modo livre, estatísticas por tamanho e partilha sem revelar a resposta. Interface em português europeu e inglês. **O seletor Palavras escolhe Português/Inglês; o idioma da interface é independente e não altera o desafio.** As respostas vêm de listas editoriais; as tentativas aceitam um vocabulário português alargado, incluindo plurais e conjugações. Não é um dicionário completo.
 
