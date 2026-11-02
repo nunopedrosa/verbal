@@ -43,3 +43,7 @@ Default new packs exclude requested ids, allow an explicit repeat override and n
 ## Print catalogue1700 — 2026-11-02
 
 Current print pool1700, all distinct answer words. Preserve the first1000 definitions/order via scripts/fixtures/paper-print-1000.json; new print-v4 ids use short-code prefix D. Gameplay v1 remains frozen. Length distribution is not uniform: retain natural editorial limits rather than padding word banks. History/exhaustion must continue working with uneven available lengths.
+
+## Two-word layout decision — 2026-11-02
+
+Both boards must remain visible together. Use side-by-side boards for4–5 letters and stacked boards for6–8, including on phones. Stacked boards may scroll naturally to preserve readable cells; this supersedes the earlier compact-phone board-switch layout. Word1/Word2 selects keyboard clues, with the source board outlined. Existing released themes stay unchanged; Animals, Plants and Places are additive immutable theme definitions.
