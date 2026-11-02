@@ -152,3 +152,7 @@ Release/private hashes regenerated for1.4.1; old caches retained. No production 
 ## 1.4.2 rules correction — 2026-11-02
 
 Removed the six-guess claim from shared EN/pt-PT rules; each game's existing specific instructions supply its correct attempt/move limit. Shared text also works in Settings without implying a mode. UI regression reproduced the old contradiction as a failing assertion, then passed for Classic, Two words, One clue, Word ladder and Deduction in both languages, explicitly checking8/4/12 wording. Core, service-worker integrity, deployment tests and i18n syntax passed. Release metadata/private hashes refreshed; old caches retained. No publication.
+
+## 1.4.3 word-language flags — 2026-11-02
+
+Game word selector and its Settings copy now show Portugal/UK flags, matching the interface selector's native flag format. Accessible name and tooltip identify Words plus the full current vocabulary language, preserving the distinction from Interface language. Controls remain74px wide with44px minimum height. Core, worker integrity, deployment and app syntax checks passed; English gameplay/backup/offline and Classic phone-layout/upgrade browser suites passed. Release metadata refreshed; old caches retained. No publication; physical iPhone/Safari remains manual.

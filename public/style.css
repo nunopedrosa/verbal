@@ -101,7 +101,7 @@ footer span+span{margin-left:8px}
 .stats-table tbody tr:nth-child(even){background:#eceee5}
 
 /* Vocabulary is independent of interface language; keep controls on one row. */
-#word-language{width:88px;flex:none;margin-left:6px;font-size:12px;background-color:var(--paper);border:1px solid var(--line)}
+#word-language{width:74px;flex:none;margin-left:6px;font-size:20px;background-color:var(--paper);border:1px solid var(--line)}
 #word-length{width:80px;font-size:12px}
 .modes button{font-size:11px;padding-left:2px;padding-right:2px}
-#modal #settings-words{width:140px;font-size:16px}
+#modal #settings-words{width:74px;font-size:20px}

@@ -1,6 +1,6 @@
 'use strict';
-var VERSION='1.4.2',CACHE='verbal-'+VERSION;
-var MANIFEST_HASH='9ee79771e4b864c6afadcafad6b0c536f6242e1cb35bd056761af24c983588da';
+var VERSION='1.4.3',CACHE='verbal-'+VERSION;
+var MANIFEST_HASH='484891dcbc6f7731ae7ed6a8dba58689126d7563158401770df88bf72ad9a45d';
 function digest(bytes){return crypto.subtle.digest('SHA-256',bytes).then(function(hash){return Array.prototype.map.call(new Uint8Array(hash),function(b){return ('00'+b.toString(16)).slice(-2);}).join('');});}
 self.addEventListener('install',function(e){
  e.waitUntil(fetch('./release.json',{cache:'no-store'}).then(function(r){
