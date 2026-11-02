@@ -7,6 +7,8 @@ PUBLIC_FILES=$(cat <<'PUBLIC_FILES'
 index.html
 style.css
 words.js
+guesses.js
+dictionary-license.txt
 core.js
 i18n.js
 app.js

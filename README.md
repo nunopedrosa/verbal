@@ -1,6 +1,6 @@
-# Verbal — v1.0.1
+# Verbal — v1.0.2
 
-Jogo de palavras instalável, local e offline. Palavras portuguesas de 4, 5, 6, 7 ou 8 letras, seis tentativas, desafio diário por tamanho, modo livre, estatísticas por tamanho e partilha sem revelar a resposta. Interface em português europeu e inglês. **Mudar a interface para inglês mantém as palavras portuguesas.** As listas iniciais não são um dicionário completo.
+Jogo de palavras instalável, local e offline. Palavras portuguesas de 4, 5, 6, 7 ou 8 letras, seis tentativas, desafio diário por tamanho, modo livre, estatísticas por tamanho e partilha sem revelar a resposta. Interface em português europeu e inglês. **Mudar a interface para inglês mantém as palavras portuguesas.** As respostas vêm de listas editoriais; as tentativas aceitam um vocabulário português alargado, incluindo plurais e conjugações. Não é um dicionário completo.
 
 ## Colocar no repositório
 
@@ -28,7 +28,7 @@ bash scripts/deploy.sh --verify /home/basecentral/verbal.basecentral.link
 
 O diretório de destino deve já existir. Adaptar o caminho ao utilizador/domínio configurados. O script faz fetch e `git pull --ff-only`, recusa alterações locais, ficheiros não rastreados, branch detached, divergência ou commits apenas no servidor. Não altera credenciais e nunca faz reset/clean/stash/push.
 
-Usa o mesmo motor Bash local da coleção (`scripts/deploy-core.sh`), com o contrato próprio em `scripts/deploy-profile.sh`. Publica apenas os 17 ficheiros de `PUBLIC_FILES`, todos presentes em `public/`. Valida a lista e os hashes SHA-256 de `scripts/deploy-hashes.txt` antes e depois da preparação. `--dry-run` só lê o inventário local: não faz fetch, pull, escritas ou verificações HTTP. `--verify` verifica HTTP após publicar. Sem argumento, o destino é `${DEPLOY_SITE:-$HOME/verbal.basecentral.link}`. `--no-pull` é reservado ao checkout cujo upstream já foi atualizado; o comando normal faz sempre fetch/pull. Se o pull alterar o motor ou perfil, o deploy recusa publicar até rever e executar novamente. Verifica fontes e destinos antes de publicar, recusa symlinks e diretórios sobrepostos, prepara cópias no destino e usa substituição atómica **por ficheiro**, com permissões 0644. O conjunto da publicação não é uma transação: uma falha durante as substituições pode deixar recursos de versões diferentes. `sw.js` é o último ficheiro, e a cache de instalação só fica pronta se todos os recursos forem obtidos e os seus hashes SHA-256 corresponderem à release. Publicar numa janela calma e voltar a executar após corrigir uma falha. Preserva ficheiros alheios e o `.htaccess` existente.
+Usa o mesmo motor Bash local da coleção (`scripts/deploy-core.sh`), com o contrato próprio em `scripts/deploy-profile.sh`. Publica apenas os 19 ficheiros de `PUBLIC_FILES`, todos presentes em `public/`. Valida a lista e os hashes SHA-256 de `scripts/deploy-hashes.txt` antes e depois da preparação. `--dry-run` só lê o inventário local: não faz fetch, pull, escritas ou verificações HTTP. `--verify` verifica HTTP após publicar. Sem argumento, o destino é `${DEPLOY_SITE:-$HOME/verbal.basecentral.link}`. `--no-pull` é reservado ao checkout cujo upstream já foi atualizado; o comando normal faz sempre fetch/pull. Se o pull alterar o motor ou perfil, o deploy recusa publicar até rever e executar novamente. Verifica fontes e destinos antes de publicar, recusa symlinks e diretórios sobrepostos, prepara cópias no destino e usa substituição atómica **por ficheiro**, com permissões 0644. O conjunto da publicação não é uma transação: uma falha durante as substituições pode deixar recursos de versões diferentes. `sw.js` é o último ficheiro, e a cache de instalação só fica pronta se todos os recursos forem obtidos e os seus hashes SHA-256 corresponderem à release. Publicar numa janela calma e voltar a executar após corrigir uma falha. Preserva ficheiros alheios e o `.htaccess` existente.
 
 `hosting/dreamhost.htaccess` é um exemplo opcional. Rever e copiar manualmente para o webroot como `.htaccess`; o deploy não o instala nem substitui. A pasta hosting nunca deve ser pública. Não é preciso reescrever rotas: é uma aplicação de uma só página sem rotas no servidor.
 
@@ -46,10 +46,11 @@ Definições → Procurar atualizações. Atualizar aplicação só aparece quan
 
 ## Palavras e testes
 
-Listas em `public/words.js`, selecionadas manualmente para este projeto. Acentos/cedilhas são normalizados. As tentativas de 5 letras usam uma lista alargada; nos outros tamanhos, respostas e palavras aceites usam a mesma lista inicial. Expandir o vocabulário com revisão editorial antes de uma divulgação ampla. O desafio usa uma função determinística da data em Lisboa e do tamanho; sem dependência de serviços externos.
+Listas em `public/words.js`, selecionadas manualmente para este projeto. Acentos/cedilhas são normalizados. As listas de respostas mantêm o conteúdo e a ordem publicados. As tentativas de todos os tamanhos usam `public/guesses.js`: 1 807 palavras de 4 letras, 6 429 de 5, 14 015 de 6, 26 311 de 7 e 41 339 de 8. **São aceites plurais e formas verbais válidos que constem da lista**, com o tamanho escolhido; não se acrescenta um S arbitrariamente. Acentos e cedilhas são normalizados, por exemplo MÃES → MAES. O vocabulário inclui formas pouco frequentes; a lista não promete aceitar todas as palavras portuguesas. O desafio usa uma função determinística da data em Lisboa e do tamanho; sem dependência de serviços externos.
 
 ```bash
 node scripts/test-core.cjs
+node scripts/test-vocabulary.cjs
 node scripts/test-sw.cjs
 python3 scripts/test-deploy.py
 ```
@@ -58,6 +59,12 @@ Os testes precisam de Node apenas na máquina de desenvolvimento; não no alojam
 
 ## Controlos partilhados e regressões de interface
 
-A release 1.0.1 usa cópias locais de `shared-controls.css`, `shared-icons.svg` e `shared-chevron.svg`, com os desenhos SVG comuns embutidos nos botões. O teclado e as pistas do jogo mantêm o desenho específico da aplicação. O idioma usa o mesmo select nativo de bandeiras no cabeçalho e nas Definições; a mudança é imediata, sem trocar a resposta ou o rascunho. O tabuleiro adapta todas as dimensões a 320px, com cálculo de altura em navegadores sem aspect-ratio; o modal usa top/right/bottom/left compatíveis com Safari 12.
+A release 1.0.1 usa cópias locais de `shared-controls.css`, `shared-icons.svg` e `shared-chevron.svg`, com os desenhos SVG comuns embutidos nos botões. O teclado e as pistas do jogo mantêm o desenho específico da aplicação. O idioma usa o mesmo select nativo de bandeiras no cabeçalho e nas Definições; a mudança é imediata, sem trocar a resposta ou o rascunho. O tabuleiro adapta as células ao espaço disponível, com letras legíveis e intervalos de 2px; o teclado mantém três filas QWERTY sem quebra. Em ecrãs estreitos as teclas são mais estreitas que 44px, por decisão específica de 2026-11-02, mas mantêm 44px de altura. O modo e o tamanho ficam na mesma linha; o modal usa top/right/bottom/left compatíveis com Safari 12.
 
 No checkout da coleção: `python3 ../pwa/scripts/sync-controls.py --check verbal` e `python3 ../pwa/scripts/sync-deploy.py --check verbal`. Para o teste opcional de navegador: instalar Playwright apenas no ambiente de desenvolvimento e executar `node scripts/test-browser.cjs`; `PLAYWRIGHT_PATH` pode indicar o módulo instalado e `CHROMIUM_PATH` um Chromium existente. Não são dependências da aplicação ou do alojamento.
+
+## Origem e reprodução do vocabulário
+
+`vendor/dictionary/` contém as fontes pt-PT do Projecto Natura, através de wooorm/dictionaries, fixadas na revisão `8cfea406b505e4d7df52d5a19bce525df98c54ab`. Para gerar as tentativas: `python3 scripts/build-vocabulary.py`, com Node, Hunspell e unmunch instalados apenas na máquina de desenvolvimento. Não faz pedidos de rede. Expande apenas entradas minúsculas sem pontuação/hífens, valida as formas expandidas com o Hunspell, normaliza acentos/cedilhas, filtra 4–8 letras, elimina duplicados e inclui todas as tentativas antigas. Não altera as respostas nem a seleção diária. O resultado está limitado a 1 MB (atualmente cerca de 729 kB, sem compressão) e fica totalmente disponível offline.
+
+O ficheiro derivado `guesses.js` usa a opção MPL 1.1 da licença do dicionário. `public/dictionary-license.txt` inclui autoria, alterações, indicação das fontes e texto integral da licença; Como jogar tem uma ligação para esse ficheiro. Para atualizar fontes, rever a nova revisão e regenerar o vocabulário, testes e metadados da release. O alojamento não necessita de Hunspell nem de um serviço de dicionário.

@@ -6,7 +6,7 @@ DirectoryIndex index.html
  AddType image/svg+xml .svg
 </IfModule>
 <IfModule mod_headers.c>
- <FilesMatch "^(index\.html|sw\.js|release\.json|manifest\.webmanifest|app\.js|core\.js|i18n\.js|words\.js|style\.css|shared-controls\.css|shared-icons\.svg|shared-chevron\.svg)$">
+ <FilesMatch "^(index\.html|sw\.js|release\.json|manifest\.webmanifest|app\.js|core\.js|i18n\.js|words\.js|guesses\.js|dictionary-license\.txt|style\.css|shared-controls\.css|shared-icons\.svg|shared-chevron\.svg)$">
   Header set Cache-Control "no-cache, must-revalidate"
  </FilesMatch>
  Header always set X-Content-Type-Options "nosniff"
